@@ -83,3 +83,12 @@ button:hover {
     color: red;
     font-size: 16px;
 }
+
+
+echo "# -rea-de-Trabalho" >> README.md
+git init
+git add . 
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Willian4182/-rea-de-Trabalho.git
+git push -u origin main
