@@ -1,0 +1,85 @@
+/* Resetando margens e paddings e definindo o layout básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definir o estilo básico do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh; /* Altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Coloca todos os itens em coluna (imagem e conteúdo) */
+}
+
+/* Estilo do header */
+header {
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+/* Centralizar a imagem */
+img {
+    max-width: 100%;  /* Evita que a imagem ultrapasse a largura da tela */
+    height: auto;     /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto;   /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo do conteúdo (formulário e resultado) */
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limita a largura máxima do conteúdo */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;  /* Ocupa 80% da largura do contêiner */
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Estilo de texto de erro */
+.error {
+    color: red;
+    font-size: 16px;
+}
